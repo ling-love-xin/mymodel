@@ -1,0 +1,32 @@
+{
+
+    "PG_CONN": {
+        "default": {
+            "port": 5432,
+            "user": "postgres",
+            "host": "10.10.10.31",
+            "password": "tellhow123",
+            "dbname": "bj_tz_ldjsc1.1"
+        },
+        "default_comment": "通州项目的数据连接信息",
+        "PG_DB": {
+            "port": 5432,
+            "user": "postgres",
+            "host": "xxx.xxx.xxx.xxx",
+            "password": "******",
+            "dbname": "postgres"
+        },
+        "PG_DB_comment": "XXXX数据"
+    },
+
+    "MySql_CONN": {
+        "default": {
+            "port": 3306,
+            "user": "root",
+            "host": "10.10.10.31",
+            "password": "tellhow123",
+            "database": "bj_tz_ldjsc1.1"
+        },
+        "default_comment": "通州项目的数据连接信息"
+    }
+}
