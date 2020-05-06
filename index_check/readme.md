@@ -12,8 +12,8 @@
 
 ### 文件夹
 
-- 《config》为一些初始化所需资料：指标表(a_bi_indx_fact)的模型sql，检查结果表(a_bi_indx_calc_rest_qlty_analy)的模型sql，日志配置文件，数据库配置文件等等
-- 《code》存放代码文件夹
+- 《config》为一些初始化所需资料：指标表(a_bi_indx_fact)的模型sql，检查结果表(a_bi_indx_calc_rest_qlty_analy)的模型sql，日志配置文件，数据库配置文件等等<br>
+- 《code》存放代码文件夹<br/>
 
 ### 基本设计逻辑
 
@@ -21,6 +21,12 @@
 1、从a_bi_indx_fact 表中读取指标的所有值 <br/>
 2、根据业务规则，将指标的业务日期与一组时间序列做对比，判断其连续性<br/>
 3、根据业务规则，将指标的业务日期与当前日期最对比，判断其及时性
+
+
+
+**注**：详细流程及算法见**《指标检查程序模块介绍2.md》**
+
+
 
 ---
 
@@ -50,7 +56,7 @@ python index_check2.0.py default
 
 ## 其他说明
 
-该程序必须要有biz*current.a*bi*indx*fact、biz*current.a*bi*indx*calc*rest*qlty_analy这两张表，因此在使用时需要先运行《config》目录下的两个SQL文件，才可以正常运行。<br/>
+&emsp;&emsp;该程序必须要有biz*current.a*bi*indx*fact、biz*current.a*bi*indx*calc*rest*qlty_analy这两张表，因此在使用时需要先运行《config》目录下的两个SQL文件，才可以正常运行。<br/>
 
 ### 配置文件介绍
 
